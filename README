@@ -1,0 +1,11 @@
+Iterative solution
+
+O(n) time
+O(1) space
+
+0. Initialize prev, nil and curr as the head
+1. read the next
+2. Reverse opps:
+   a. make curr.Next the previous
+   b. make the previous the current
+3. make curr the next, for the following loop

@@ -10,11 +10,13 @@ func reverseList(head *ListNode) *ListNode {
 	curr := head
 
 	for curr != nil {
-		next := curr.Next // read next
+		next := curr.Next // read next; only used for loop.
+
 		// 2 switch operations
 		curr.Next = prev // make next, the previous
 		prev = curr      // make prev, the current
-		curr = next      // make curr, the next, for the following loop
+
+		curr = next // make curr, the next, for the following loop
 	}
 	return prev
 }
